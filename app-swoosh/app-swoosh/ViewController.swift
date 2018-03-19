@@ -22,12 +22,10 @@ class ViewController: UIViewController {
         // bgImg.frame = view.frame;
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue)            // function to use back button from gender screen to home screen. Control dragged back button to "exit" icon on story board to use this
+    {
+        
     }
-
 
 }
 
