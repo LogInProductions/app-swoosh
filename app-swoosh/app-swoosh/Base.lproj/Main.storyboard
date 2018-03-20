@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="29.600000000000001" y="142.57871064467767"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="N9d-1Z-4aI">
             <objects>
-                <viewController id="SAc-ae-Dua" sceneMemberID="viewController">
+                <viewController id="SAc-ae-Dua" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T8R-eY-Yke"/>
                         <viewControllerLayoutGuide type="bottom" id="ugU-I7-mgB"/>
@@ -172,6 +172,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="SAc-ae-Dua" eventType="touchUpInside" id="p2R-JN-Ir9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0V-X4-mG8">
                                 <rect key="frame" x="16" y="26" width="44" height="24"/>
@@ -204,16 +207,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="loi-7b-G9q" secondAttribute="trailing" id="rsr-IU-V0Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="L88-t2-kQL" kind="show" identifier="skillVCSegue" id="d1w-QQ-7LO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOz-sB-hhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Efp-i4-r33" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="799.20000000000005" y="142.57871064467767"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="8Po-eg-haF">
             <objects>
-                <viewController id="L88-t2-kQL" sceneMemberID="viewController">
+                <viewController id="L88-t2-kQL" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ooC-D9-RTC"/>
                         <viewControllerLayoutGuide type="bottom" id="6GI-ku-D9q"/>
